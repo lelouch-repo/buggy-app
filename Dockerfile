@@ -1,4 +1,4 @@
-FROM php:8.5.0RC3-apache
+FROM php:8.5.0-apache
 RUN apt-get update && apt-get install -y iputils-ping dnsutils
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
